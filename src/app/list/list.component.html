@@ -1,0 +1,9 @@
+<p>Lista!</p>
+
+<ul>
+    <li *ngFor="let item of itemList">
+      <a (click)="showDetails(item.id)" routerLink="/details/{{item.id}}">{{ item.name }}</a>
+    </li>
+  </ul>
+
+ 
